@@ -15,8 +15,13 @@
     "frozen_layers": "visual",
     "tuned_epoch": 1,
     "init_lr": 0.001,
+    "max_lr": 0.02,
     "batch_size": 8,
     "weight_decay": 0.05,
     "min_lr": 0,
-    "optimizer": "sgd"
+    "optimizer": "sgd",
+    "label_smoothing": 0.1,
+    "kd_alpha": 0.5,
+    "kd_temp": 2.0,
+    "use_onecycle": true
 }
