@@ -518,7 +518,7 @@ class Proof_Net(SimpleClipNet):
                 for param in self.projs_img[i].parameters():
                     param.requires_grad = False
                 for param in self.projs_text[i].parameters():
-                    param.requires_grad = True
+                    param.requires_grad = False
             for param in self.projs_img[-1].parameters():
                 param.requires_grad = True
         for param in self.sel_attn.parameters():
